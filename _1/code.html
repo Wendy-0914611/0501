@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<html lang="zh-Hant"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&amp;family=Work+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .font-serif { font-family: 'Noto Serif TC', serif; }
+        .font-body { font-family: 'Work Sans', sans-serif; }
+        .lattice-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 0l20 20-20 20L0 20z' fill='none' stroke='%23735c00' stroke-width='0.5' stroke-opacity='0.1'/%3E%3C/svg%3E");
+        }
+        .text-vertical { writing-mode: vertical-rl; }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "on-tertiary-fixed-variant": "#474747",
+                "on-primary-fixed-variant": "#1b503a",
+                "surface-dim": "#dcdad4",
+                "on-primary-fixed": "#002114",
+                "on-error-container": "#93000a",
+                "on-tertiary": "#ffffff",
+                "on-surface-variant": "#404943",
+                "primary-fixed-dim": "#9cd2b5",
+                "surface-tint": "#356850",
+                "surface-bright": "#fcf9f3",
+                "surface-container-low": "#f6f3ed",
+                "tertiary": "#222222",
+                "on-secondary": "#ffffff",
+                "tertiary-container": "#373737",
+                "secondary-fixed": "#ffe088",
+                "secondary-container": "#fed65b",
+                "on-secondary-fixed": "#241a00",
+                "outline-variant": "#c0c9c1",
+                "surface-container-high": "#ebe8e2",
+                "on-primary": "#ffffff",
+                "on-surface": "#1c1c18",
+                "on-secondary-container": "#745c00",
+                "secondary-fixed-dim": "#e9c349",
+                "surface": "#fcf9f3",
+                "inverse-primary": "#9cd2b5",
+                "inverse-surface": "#31312d",
+                "on-background": "#1c1c18",
+                "tertiary-fixed": "#e4e2e1",
+                "tertiary-fixed-dim": "#c8c6c6",
+                "on-error": "#ffffff",
+                "primary": "#002819",
+                "surface-variant": "#e5e2dc",
+                "outline": "#717973",
+                "background": "#fcf9f3",
+                "on-primary-container": "#77ac90",
+                "surface-container-lowest": "#ffffff",
+                "surface-container-highest": "#e5e2dc",
+                "on-secondary-fixed-variant": "#574500",
+                "primary-container": "#06402b",
+                "error-container": "#ffdad6",
+                "secondary": "#735c00",
+                "inverse-on-surface": "#f3f0ea",
+                "error": "#ba1a1a",
+                "on-tertiary-fixed": "#1b1c1c",
+                "surface-container": "#f0eee8",
+                "on-tertiary-container": "#a1a0a0",
+                "primary-fixed": "#b8efd0"
+            },
+            "fontFamily": {
+                "body-md": ["Work Sans"],
+                "headline-lg": ["Noto Serif TC"],
+                "body-lg": ["Work Sans"],
+                "headline-md": ["Noto Serif TC"],
+                "headline-xl": ["Noto Serif TC"],
+                "label-md": ["Work Sans"]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface selection:bg-secondary selection:text-white">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-8 py-4 bg-stone-50/90 dark:bg-stone-950/90 backdrop-blur-md border-b border-yellow-600/30">
+<div class="text-2xl font-serif font-bold text-emerald-900 dark:text-emerald-400 tracking-tighter">東圓軒</div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="font-serif text-emerald-800/70 hover:text-emerald-900 transition-colors duration-300" href="#about">品牌故事</a>
+<a class="font-serif text-emerald-800/70 hover:text-emerald-900 transition-colors duration-300" href="#signature">經典盛宴</a>
+<a class="font-serif text-emerald-800/70 hover:text-emerald-900 transition-colors duration-300" href="#private-dining">私邸包廂</a>
+<a class="font-serif text-emerald-800/70 hover:text-emerald-900 transition-colors duration-300" href="#location">邸址</a>
+</nav>
+<button class="bg-emerald-900 text-yellow-500 font-serif px-6 py-2 hover:bg-emerald-800 transition-colors duration-300 active:scale-95">Book Now</button>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative h-screen flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="A cinematic, high-angle photograph of a serene traditional Chinese garden courtyard at dusk. The scene features weathered stone paths, a tranquil koi pond reflecting soft lanterns, and lush bamboo framing the edges. The lighting is low-key and atmospheric, with golden highlights catching the architectural curves of a wooden pavilion. The overall aesthetic is one of refined luxury and timeless Eastern elegance, perfectly matching the Tung Yuan Hsuan brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3BaRE3NfUNeKt4BkbQeLh9pCidat83lzOHzIpI83Gro0RE_wg1i-HNhP-a-NFdBZxNstqTMlSkJmwMzRpRddwCrUfnJY6GzbLCVwr-W4KPvF1_x2h4VPxH1bp6ws4iZKhzotsm1_3pEEZpgnoQETHOa_PgaBRq7nVBNU6iFLbevSNRA6XH9qlxRk4h0kKr2uzGO_2pHdpKtnYZfw9vrc74sMi6Hc7WizDvouiYSw4SZijSHzDYP5f97w_3RvR2n8a0XCf4vNp0D4"/>
+<div class="absolute inset-0 bg-emerald-950/40"></div>
+</div>
+<div class="relative z-10 text-center text-white px-4">
+<h1 class="font-serif text-6xl md:text-8xl lg:text-9xl tracking-[0.2em] mb-6 drop-shadow-lg">東圓軒</h1>
+<p class="font-serif text-xl md:text-2xl tracking-[0.5em] opacity-90">嘉義極致粵台料理首選</p>
+<div class="mt-12 flex flex-col items-center">
+<div class="w-px h-24 bg-secondary"></div>
+</div>
+</div>
+</section>
+<!-- About Section: Kung Fu Cuisine -->
+<section class="py-[120px] px-margin-mobile md:px-margin-desktop bg-surface lattice-pattern" id="about">
+<div class="max-w-[1280px] mx-auto grid md:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<div class="absolute -top-4 -left-4 w-24 h-24 border-t-2 border-l-2 border-secondary"></div>
+<img class="w-full h-[600px] object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="A focused close-up of a master chef's hands skillfully preparing delicate ingredients in a high-end commercial kitchen. The lighting is dramatic, highlighting the steam rising from a wok and the precise movements of the chef. The environment is pristine and modern, yet evokes traditional 'Kung Fu' culinary techniques through its meticulous attention to detail. Soft golden light enhances the rich textures of fresh ingredients." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB93J6NHztHJXkYK41I6x4-AI6OU5KCY8N-w00suuQYP9myFNYRzZjdxbIic_b2ikSq6SlMWcoB-h1tkkDgKPhWOzV8reccb62WGq4fAwcNjyC4fBZeA6UjVA3Q7M2Ccxt2XlHkf81uQrL4Z2BUhdCafQvIbfB04MSKo9oUnqC4dq3WZG42Dm2fNAMYv6CGgno2BXu-Ut5FO7LDuJq3hgyJ1i-aM3Lu0GhKOkvyqAPkutT7vkOkmYg-CknUGAydaG__bOm1PHOEgA0"/>
+</div>
+<div class="flex flex-col gap-8">
+<span class="font-body text-label-md text-secondary tracking-widest uppercase">Traditional Kung Fu Cuisine</span>
+<h2 class="font-serif text-headline-xl text-primary leading-tight">淬煉真味<br/>究極功夫料理</h2>
+<p class="font-body text-body-lg text-on-surface-variant leading-relaxed">
+                        在東圓軒，我們堅持「本味、功夫、溫度」。每一道佳餚皆是主廚對食材精魂的禮讚。我們不僅傳承經典粵菜的精湛工法，更揉合台灣在地當令珍饈，將傳統與現代於盤中交織出層次分明的味覺地圖。
+                    </p>
+<p class="font-body text-body-md text-on-surface-variant opacity-80">
+                        從繁複的備料到對火候的精準掌握，每一口都能感受到深厚的功夫底蘊。這不僅是一場饗宴，更是一次與食材的深度對話。
+                    </p>
+<div class="pt-4">
+<div class="flex items-center gap-4">
+<div class="h-px w-12 bg-secondary"></div>
+<span class="font-serif italic text-secondary">Original Flavor Perfection</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Signature Dishes Section (Bento Grid Style) -->
+<section class="py-[120px] px-margin-mobile md:px-margin-desktop bg-surface-container-low" id="signature">
+<div class="max-w-[1280px] mx-auto">
+<div class="text-center mb-20">
+<h2 class="font-serif text-headline-xl text-primary">經典盛宴</h2>
+<p class="font-body text-body-md text-secondary mt-4 tracking-[0.2em]">Signature Selections</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 h-auto">
+<!-- Duck: Large Main Feature -->
+<div class="md:col-span-8 group relative overflow-hidden border border-outline-variant bg-white">
+<div class="aspect-[16/9] overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A masterfully plated Crispy Roast Duck, served on a handmade ceramic platter. The duck skin is a glossy, deep amber color, shimmering under warm studio lighting. Accompanying the duck are translucent steamed pancakes, fine julienned leeks, and a rich, dark hoisin sauce. The setting is minimalist and elegant, with a subtle stone texture in the background, emphasizing the premium quality of this signature dish." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsaTfH2cZlXeW4ZA_PsZTP7-XpPfllugGxSCJIPOlAlExuCVYcncQJw8aWocgeCa7rNyOnmacODTElLYMYRsbul1mW8E4BgMpHwbOP-j_3jbP8GFSdI7pGE91Etj-iuIFFcn4M_gjqYUTK3us5YUTol5zClfNsgiRGXy6XwCEZ3cn9igbwO7MWsDod9VqELG4_LBPI3ywS1knlbArw588i6MsSavj82egd2niISJ2F0owvcGzJW_TLNXLm_Z0C9XAwGkoZ8GHfG4E"/>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-serif text-headline-md text-primary">招牌脆皮烤鴨</h3>
+<span class="bg-secondary/10 text-secondary px-3 py-1 text-label-md font-body">需提前預訂</span>
+</div>
+<p class="font-body text-body-md text-on-surface-variant max-w-2xl">
+                                選用上等宜蘭櫻桃鴨，經秘製中藥材醃製，低溫烘烤再搶火淋油，外皮酥脆如琥珀，肉質細嫩多汁。
+                            </p>
+</div>
+</div>
+<!-- Grouper: Tall Feature -->
+<div class="md:col-span-4 group relative overflow-hidden border border-outline-variant bg-white">
+<div class="h-full flex flex-col">
+<div class="flex-grow overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A whole Steamed Dragon Tiger Grouper presented in a traditional oval porcelain dish. The fish is topped with vibrant green scallion shreds, ginger slivers, and fresh cilantro, all glistening with a light premium soy-based sauce. The steam is visible, suggesting immediate serving. The aesthetic is clean and focuses on the freshness of the seafood and the clarity of the cooking technique, set against a soft cream background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDNs2svo8_phekCjuUfhDrRaZsbWfSuPy6FWkCURE46ZeoUU6vjuIqi7GI2kETVQXMHHJIgdhVDObIg2MQf2mwBRUeAR09o6kCGi1U4zRGB6HolKHs-uwTsx6wjetUEc7G5D0grjESb0LB6QIXgMAJl6occNFq32CrOqlkm0PLewy4fJUfREZoPQTQ2cbY0yckQo2Vyk20XG3PnDXuhTIa0utomIZ-6T5gXl9QP-3nkp6NL-RrUJcDmgoX4bV_YQwxAYxAu2jGfH8"/>
+</div>
+<div class="p-8 bg-primary text-white">
+<h3 class="font-serif text-headline-md mb-4">清蒸龍虎斑</h3>
+<p class="font-body text-body-md opacity-80">
+                                    產地直送活魚，以最純粹的清蒸工法保留其鮮甜與極富膠質的彈性。
+                                </p>
+</div>
+</div>
+</div>
+<!-- Dim Sum: Wide Secondary -->
+<div class="md:col-span-12 group relative overflow-hidden border border-outline-variant bg-white flex flex-col md:flex-row">
+<div class="md:w-1/2 overflow-hidden h-80 md:h-auto">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A delicate arrangement of handcrafted Dim Sum, including Har Gow with translucent skin showing pink shrimp through it. The items are served in authentic bamboo steamers. The scene is shot from a top-down perspective, highlighting the symmetry and artistry of the hand-folded pleats. Warm, soft light emphasizes the moist, steaming textures, creating an inviting and high-end culinary presentation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9HJgLv8tiN-vxDPocjef28GtVQvzsQC6kJqQxmQnECKSFIQFLfyrOixleBN4tKPwiDlr18DEW6S0A8PH4SyA3zwIxUTU_BWlyB9uY6IPP7cjYMIh6vnhOw6ueoVyhks2a0A_RkV8DrHf_yu-h4CSxciQaNdP64C07C_biWd_jzQaukB6bXyuEiB71Ofn2Fg4N1kq_GC6uMeUAgBTd8VIJFQxYSWXjEGHmL1xBf4SNu3fX_FBYLRCp3GkmFUZMe0MgLqzYKRzEJ3k"/>
+</div>
+<div class="md:w-1/2 p-12 flex flex-col justify-center">
+<h3 class="font-serif text-headline-md text-primary mb-6">精緻港式點心</h3>
+<p class="font-body text-body-lg text-on-surface-variant mb-8">
+                                職人每日手工製作，包含招牌晶瑩鮮蝦餃、蟹黃蒸燒賣。皮薄餡實，將經典港味完美重現。
+                            </p>
+<button class="w-fit border border-secondary text-secondary font-body px-8 py-3 hover:bg-secondary hover:text-white transition-all duration-300">
+                                探索完整菜單
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Menu Overview Section -->
+<section class="py-[120px] bg-background">
+<div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="aspect-square overflow-hidden bg-stone-200">
+<img class="w-full h-full object-cover" data-alt="Close-up of a beautifully garnished gourmet dish with micro-greens." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAR-HNB--POby5sLd7aJCP_74pDJargUsdaGhIZQVgXzf-MUVyHMKVMmW8cojINHAsqOG4aa1npGj1Z6UrndJCm2Bi2hV4TeF4CMjv4tseF0pbkaQ4LBZq6w7Wj4E6_lIL2dEgPweZNMUcknVBIvxJO0YJ7dHNpGSQN-40Mwa6X__d8loX5lRzzzoA9GlkFGEY7ee-_yOGrv4n3Po8EWg4MdxDrZC3Wks3cyvdLwMsJ2IQrjdiOI-9HwrXRexOIiO2YigcAoMxC7Z8"/>
+</div>
+<div class="aspect-square overflow-hidden bg-stone-200 mt-8">
+<img class="w-full h-full object-cover" data-alt="Traditional Chinese tea service with delicate porcelain cups." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCI8BfW2jsanNqku_4zNN9-kAH1owRw_CmB2K-8gfmgtaNU9LCaIZwpqMeByIl3TSfI-c7emT3cR6H_0UE4Pjs22TmsZqNIrBteH7roZARPX8uAFhUkyiooZgElZxCZOVxJu8uxjLG-jHnPy4Nu2dDRai8E1V8J3YTdCUTKKURLZZXSx4uGg5w5VYjf8S2x6DjaQhCq-Z2Gk4gKnq0b2YlUPYgPDfXgY_u-ftu2VyJ1GeLl2GTkAj-BRhoh4T3Hhl789HdhIPcxGZY"/>
+</div>
+<div class="aspect-square overflow-hidden bg-stone-200">
+<img class="w-full h-full object-cover" data-alt="Artfully arranged seafood dish on a dark stone plate." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoy_RMd3Y_4TbRygQVaUwTxItZOckkgcgcdIP0x6WwWGDlsfxqldjWfDCfyaPNkVfMYjhyBINN5sLdJb-4togT4upvRKlwwZJREeMzpRYZy1A9DYiglMvd1MBFBW-sL1_dg3BjVRZ005XN9INpvKfJn9pUWAIqqGibs7Qooqp6DRG7haSPM3zLOz0SfXsYQcusjS42Zpa0w8WnAt_esteEL5SMQtD0tF7j5ttwmhma5yR86KNRFJ2S9sQNjaatn4wEslJyetSudX0"/>
+</div>
+<div class="aspect-square overflow-hidden bg-stone-200 mt-8">
+<img class="w-full h-full object-cover" data-alt="A vibrant arrangement of fresh, seasonal ingredients for a premium hot pot." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKzcoV-565ZGnWyOR22Vh4oGH80cms4PUKzhRthbfQ6lAeANZEgi0DlAyGVMPyG1149DJOr6as9yPRCJnP35FafjGaijuzKbN6qxL9v6ODVwiQGOLf1W7Vlq4LRKJ1o2xtRKSa78c2FhfxThOvMxMzHHEXjAXJDy6QrI09BC6qn5_E5LJu_niwcbq_gN4lR51zavzRR-Ecq70luBIlMQ6ttbT50DhomfmOOsLRvY6nNdlfRSgPNPbrYlpaNwr6bQRdbWBI7lA8ers"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Private Dining Section -->
+<section class="relative py-[120px] overflow-hidden bg-primary text-white" id="private-dining">
+<div class="absolute inset-0 opacity-10 lattice-pattern pointer-events-none"></div>
+<div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop grid md:grid-cols-2 gap-20 items-center relative z-10">
+<div class="order-2 md:order-1">
+<h2 class="font-serif text-headline-xl mb-8">庭園隱逸<br/>私邸包廂</h2>
+<p class="font-body text-body-lg mb-10 leading-relaxed text-primary-fixed">
+                        我們提供多款獨立隱密的觀景包廂，專為高端商務聚會與家族盛宴設計。包廂環抱雅緻庭園，窗外景致如畫隨四季遞嬗。在品味珍饈的同時，亦能享受私密尊榮的感官洗禮。
+                    </p>
+<div class="grid grid-cols-2 gap-8 mb-12">
+<div>
+<span class="block text-secondary font-serif text-3xl mb-2">12</span>
+<span class="text-label-md font-body uppercase tracking-tighter">VIP Private Rooms</span>
+</div>
+<div>
+<span class="block text-secondary font-serif text-3xl mb-2">Garden</span>
+<span class="text-label-md font-body uppercase tracking-tighter">View Scenery</span>
+</div>
+</div>
+<button class="bg-secondary text-on-secondary-fixed font-serif px-10 py-4 hover:brightness-110 transition-all">
+                        預約專屬空間
+                    </button>
+</div>
+<div class="order-1 md:order-2 h-[500px]">
+<img class="w-full h-full object-cover shadow-2xl" data-alt="A luxurious private dining room in a modern Chinese style. The room features a large circular wooden table set with fine white linen and jade-green tableware. A floor-to-ceiling glass window offers a panoramic view of a meticulously manicured Eastern garden with stone lanterns and bonsai trees. The interior lighting is warm and discreet, creating an atmosphere of exclusive tranquility and prestige." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAK1E31KvTWPJwN8LEiX0V74SU4iujdvd5yKXMCsea7gVU7p6bMDbIZwNmGTKosI2PFSRwlK0rx_ry19KgtUQ06Y5z8VcrdMxYPzxFqzmgZPsZPqhrX4u-8K_yjEnDPaXVGxV4eH8FvyQOJvkEckCgaQLWQ9LBeiIA-pOg1uzL8buYmw561eLSNsGBFZlShlz9cO_DIXIseBxvweAMiRWWBfrCTCf_lakFczmxsdA166fyuxXBU1brXGG1NkQxNicEfZLhkTrSsRsQ"/>
+</div>
+</div>
+</section>
+<!-- Location Section -->
+<section class="py-[120px] bg-surface" id="location">
+<div class="max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex flex-col md:flex-row gap-12">
+<div class="md:w-1/3">
+<h2 class="font-serif text-headline-lg text-primary mb-8">邸址資訊</h2>
+<div class="space-y-6">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-secondary">location_on</span>
+<div>
+<p class="font-body font-semibold text-primary">餐廳地址</p>
+<p class="font-body text-on-surface-variant">嘉義市東區大雅路二段</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-secondary">call</span>
+<div>
+<p class="font-body font-semibold text-primary">預約專線</p>
+<p class="font-body text-on-surface-variant">05-277-2266</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-secondary">schedule</span>
+<div>
+<p class="font-body font-semibold text-primary">營業時間</p>
+<p class="font-body text-on-surface-variant">午餐 11:00-14:00</p>
+<p class="font-body text-on-surface-variant">晚餐 17:00-21:00</p>
+</div>
+</div>
+</div>
+<button class="mt-12 w-full flex items-center justify-center gap-2 border border-primary text-primary font-body py-4 hover:bg-primary hover:text-white transition-all">
+<span class="material-symbols-outlined">directions</span>
+                            Get Directions
+                        </button>
+</div>
+<div class="md:w-2/3 h-[500px] bg-stone-100 border border-outline-variant relative">
+<img class="w-full h-full object-cover" data-alt="A clean, minimalist map illustration focusing on the Da-ya Road area in Chiayi City's East District. The map is rendered in a soft palette of sage green and parchment cream to match the restaurant's aesthetic. Major landmarks are marked with subtle gold icons, and 'Tung Yuan Hsuan' is highlighted with a premium brand marker." data-location="Chiayi City East District" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnguL2MzVXoDp0_9w_MRC8uaHIwc8xZEbuvUFXGnM0reI8OV0ISNwOJdzfWIIqhI8naekgUzmvR2IosvdxJ_ghSSu1QPjcNdTMk9Ohm3Yq-s2TiFRNWFnwVxCNFH13lrUwqGRyWqb8tC6YUx3JhFd1PzOR_0kJb449rS3rqAV9g6RbLS5hg-x5IuTshRQbM7g0nbrlrlx9_9_Sr0I86iZRyZb7KoOp7PoNEmcllzlBcSMGSAlsoodhgPs9-Z703O5Tw97KihV58_k"/>
+<div class="absolute top-4 left-4 bg-white/90 backdrop-blur p-4 border border-secondary/20 shadow-md">
+<p class="font-serif font-bold text-primary">東圓軒 | Tung Yuan Hsuan</p>
+<p class="font-body text-xs text-secondary">嘉義市東區大雅路二段</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 px-8 flex flex-col md:flex-row justify-between items-start gap-8 bg-emerald-950 dark:bg-stone-950 border-t border-yellow-600/30">
+<div class="flex flex-col gap-6">
+<div class="text-xl font-serif text-yellow-500">東圓軒 Tung Yuan Hsuan</div>
+<p class="font-serif text-stone-200 max-w-sm">
+                傳承功夫料理精髓，打造嘉義最優雅的餐飲庭園。<br/>
+                每一口真味，皆是我們對賓客的至高禮遇。
+            </p>
+</div>
+<div class="grid grid-cols-2 gap-16">
+<div class="flex flex-col gap-4">
+<span class="text-yellow-500 font-serif font-bold">快速連結</span>
+<nav class="flex flex-col gap-2">
+<a class="text-stone-400 hover:text-yellow-500 transition-opacity" href="#">菜單列表</a>
+<a class="text-stone-400 hover:text-yellow-500 transition-opacity" href="#">私邸包廂</a>
+<a class="text-stone-400 hover:text-yellow-500 transition-opacity" href="#">交通位置</a>
+<a class="text-stone-400 hover:text-yellow-500 transition-opacity" href="#">聯繫我們</a>
+</nav>
+</div>
+<div class="flex flex-col gap-4">
+<span class="text-yellow-500 font-serif font-bold">關注我們</span>
+<div class="flex gap-4">
+<a class="text-stone-400 hover:text-yellow-500 transition-opacity" href="#">Facebook</a>
+<a class="text-stone-400 hover:text-yellow-500 transition-opacity" href="#">Instagram</a>
+</div>
+</div>
+</div>
+<div class="w-full md:w-auto mt-8 md:mt-0 pt-8 md:pt-0 border-t md:border-t-0 border-yellow-600/20">
+<p class="text-stone-400 font-body text-xs">
+                © 2024 Tung Yuan Hsuan 東圓軒. All Rights Reserved.
+            </p>
+</div>
+</footer>
+</body></html>
